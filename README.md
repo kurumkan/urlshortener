@@ -1,5 +1,3 @@
-#Node JS Request Header Parser
+#Node JS URL Shortener
 
-Get the IP address, language and operating system for your browser.
-
-See the <a href="https://headerparserkurumkan.herokuapp.com/" target="_blank">demo</a>.
+See the <a href="" target="_blank">demo</a>.

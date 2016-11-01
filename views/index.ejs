@@ -1,0 +1,56 @@
+<% include ./partials/header %>
+<div id="input-box">
+	<form role="form" id="form" method="POST" action="/">  
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="input-group input-group-lg">						
+					<input class="form-control input-lg" 						
+						type="url" 
+						name="longUrl" 
+						placeholder="Enter your URL here"
+						required="" 
+					>
+					<div class="input-group-btn">							
+						<button type="submit" class="btn btn-primary btn-lg">Shorten URL</button>					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="errors">
+				
+			</div>
+		</div>
+	</form>				
+</div>
+<div class="table-responsive">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>Original URL</th>
+				<th>Short URL</th>
+				<th>Created</th>
+				<th>All Clicks</th>
+			</tr>				
+		</thead>	
+		<tbody>
+		<% data.forEach(function(urlData){%>
+			<tr>
+				<td class="truncate">
+					<a href="<%= urlData.longUrl%>" target="_blank"><%=removeProtocol(urlData.longUrl)%></a>
+				</td>
+				<td>
+					<a href="<%= urlData.shortUrl%>" target="_blank"><%= data.host+urlData.shortUrl%></a>
+				</td>
+				<td>
+					<%= dateFormat(urlData.created, fullDateFormat)%>
+				</td>
+				<td>
+					<%= urlData.clicks %>
+				</td>
+			</tr>
+		<%});%>
+		</tbody>
+		</table>
+</div>		
+<% include ./partials/footer %>				

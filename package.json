@@ -1,0 +1,26 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "Get the IP address, language and operating system for your browser.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurumkan/urlshortener.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurumkan/urlshortener/issues"
+  },
+  "homepage": "https://github.com/kurumkan/urlshortener#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dateformat": "^1.0.12",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.5"
+  }
+}

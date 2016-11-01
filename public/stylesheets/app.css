@@ -1,0 +1,26 @@
+body{
+	font-family: 'Roboto Slab', serif;
+	color: #444;
+}
+
+#input-box{
+	margin: 20px 0; 
+}
+
+#footer{
+	text-align: center;
+	margin: 20px 0; 	
+}
+
+.truncate {
+	max-width: 250px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#errors{
+	padding-left:15px;
+	padding-top: 10px;
+	color: red; 
+	height: 20px;
+}
