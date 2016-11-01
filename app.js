@@ -21,6 +21,7 @@ app.locals.removeProtocol = utils.removeProtocol;
 var urlModel = urlDB.urlModel;
 
 app.get("/", function(request, response){	
+	
 	//retreive last few blogposts from the db			
 	//show index page with last few db entries listed	
 	urlModel.find({})
